@@ -12,3 +12,5 @@ jobs:
   repository_dispatch:
     types:
       - webhook
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
