@@ -1,6 +1,7 @@
 name: GitHub Actions Demo
-# workflow triggers
-on:
+on: [push]
+jobs:
+  on:
   push:
     branches: [ source ]
   pull_request:
@@ -11,5 +12,3 @@ on:
   repository_dispatch:
     types:
       - webhook
-    steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
