@@ -6,8 +6,7 @@ on:
       - webhook-one
 
 jobs:
-  build:
-    name: build
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
     steps:
-    - name: Hello
-      run: echo "Hello, I've been triggered by a webhook!!"
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
