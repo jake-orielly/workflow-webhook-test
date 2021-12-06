@@ -1,5 +1,9 @@
 name: GitHub Actions Demo
   on:
+  push:
+    branches: [ source ]
+  pull_request:
+    branches: [ source ]
   workflow_dispatch:
   jobs:
     Explore-GitHub-Actions:
